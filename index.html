@@ -42,7 +42,7 @@
   .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 5rem; align-items: start; }
   .about-body p { font-size: 1rem; color: var(--slate); font-weight: 300; line-height: 1.85; margin-bottom: 1.25rem; }
   .about-sidebar h3 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--navy); margin-bottom: 1rem; font-weight: 500; }
-  .tag-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+  .tag-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0; } .focus-group { margin-bottom: 1.4rem; } .focus-group:last-of-type { margin-bottom: 2rem; } .focus-group-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.55rem; }
   .tag { font-size: 0.75rem; font-weight: 500; padding: 0.35rem 0.85rem; border: 1px solid var(--border); border-radius: 2px; color: var(--slate); background: var(--white); letter-spacing: 0.03em; }
   #experience { background: var(--white); }
   .exp-list { display: flex; flex-direction: column; }
@@ -139,15 +139,32 @@
     </div>
     <div class="about-sidebar">
       <h3>Areas of Focus</h3>
-      <div class="tag-list">
-        <span class="tag">Democratic Accountability</span>
-        <span class="tag">Constitutional Governance</span>
-        <span class="tag">Criminal Justice Reform</span>
-        <span class="tag">Institutional Design</span>
-        <span class="tag">Political Behavior</span>
-        <span class="tag">Community Engagement</span>
-        <span class="tag">Legislative Advocacy</span>
-        <span class="tag">Reentry Services</span>
+      <div class="focus-group">
+        <div class="focus-group-label">Research</div>
+        <div class="tag-list">
+          <span class="tag">Policy Research</span>
+          <span class="tag">Qualitative Methods</span>
+          <span class="tag">Political Analysis</span>
+          <span class="tag">Governance Studies</span>
+        </div>
+      </div>
+      <div class="focus-group">
+        <div class="focus-group-label">Coalition Building</div>
+        <div class="tag-list">
+          <span class="tag">Stakeholder Engagement</span>
+          <span class="tag">Community Organizing</span>
+          <span class="tag">Voter Outreach</span>
+          <span class="tag">Cross-sector Partnerships</span>
+        </div>
+      </div>
+      <div class="focus-group">
+        <div class="focus-group-label">Advocacy</div>
+        <div class="tag-list">
+          <span class="tag">Legislative Advocacy</span>
+          <span class="tag">Criminal Justice Reform</span>
+          <span class="tag">Democratic Accountability</span>
+          <span class="tag">Reentry Policy</span>
+        </div>
       </div>
       <h3>Languages</h3>
       <div class="tag-list">
