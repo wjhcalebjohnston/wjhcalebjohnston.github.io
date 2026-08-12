@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://caleb-johnston.com/sitemap.xml

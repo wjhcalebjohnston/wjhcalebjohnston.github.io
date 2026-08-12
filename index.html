@@ -1,492 +1,352 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Caleb Johnston — Democratic accountability and criminal-legal reform</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caleb Johnston | Public Policy Research &amp; Program Operations</title>
+  <meta name="description" content="Caleb Johnston is a Washington, D.C.-based public-service researcher and operations professional working across policy, justice, campaigns, teaching, and institutional implementation.">
+  <meta name="theme-color" content="#0e2a47">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://caleb-johnston.com/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
 
-<meta name="description" content="Caleb Johnston is a Reentry Assistant at Georgetown's Prisons and Justice Initiative and an M.A. candidate in American Government. Research and writing on reentry governance, public safety, and democratic norms.">
-<link rel="canonical" href="https://caleb-johnston.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Caleb Johnston">
+  <meta property="og:title" content="Caleb Johnston | Public Service, from Research to Implementation">
+  <meta property="og:description" content="Policy research, program operations, justice, campaigns, teaching, and public institutions.">
+  <meta property="og:url" content="https://caleb-johnston.com/">
+  <meta property="og:image" content="https://caleb-johnston.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Caleb Johnston with the words Public service, from research to implementation.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Caleb Johnston | Public Service, from Research to Implementation">
+  <meta name="twitter:description" content="Policy research, program operations, justice, campaigns, teaching, and public institutions.">
+  <meta name="twitter:image" content="https://caleb-johnston.com/assets/og-image.jpg">
+  <meta name="twitter:image:alt" content="Caleb Johnston with the words Public service, from research to implementation.">
 
-<meta property="og:type" content="profile">
-<meta property="og:site_name" content="Caleb Johnston">
-<meta property="og:title" content="Caleb Johnston — Democratic accountability and criminal-legal reform">
-<meta property="og:description" content="Reentry Assistant at Georgetown's Prisons and Justice Initiative. M.A. in American Government, Georgetown. Research and writing on reentry governance, public safety, and democratic norms.">
-<meta property="og:url" content="https://caleb-johnston.com/">
-<meta property="og:image" content="https://caleb-johnston.com/assets/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Caleb Johnston — institutions are experienced at the front desk.">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Caleb Johnston — Democratic accountability and criminal-legal reform">
-<meta name="twitter:description" content="Reentry Assistant at Georgetown's Prisons and Justice Initiative. M.A. in American Government, Georgetown.">
-<meta name="twitter:image" content="https://caleb-johnston.com/assets/og-image.jpg">
-
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#16191B">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&display=swap">
-
-<style>
-/* ---------- tokens ---------- */
-:root{
-  --bone:#E9E7E1;
-  --bone-lift:#F3F1EB;
-  --bone-deep:#DEDBD2;
-  --ink:#16191B;
-  --ink-soft:#4A5052;
-  --ink-faint:#6E7476;
-  --verd:#2F6B63;
-  --verd-deep:#245049;
-  --verd-bright:#3E8F83;
-  --rule:#CFCBC0;
-
-  --font-display:"Fraunces","Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
-  --font-body:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-
-  --measure:64ch;
-  --rail:190px;
-  --gap:3.5rem;
-  --pad:clamp(1.25rem,5vw,4.5rem);
-
-  --step--1:clamp(.82rem,.79rem + .14vw,.9rem);
-  --step-0:clamp(1.02rem,.98rem + .2vw,1.13rem);
-  --step-1:clamp(1.2rem,1.1rem + .5vw,1.45rem);
-  --step-2:clamp(1.7rem,1.4rem + 1.5vw,2.6rem);
-  --step-3:clamp(2.4rem,1.7rem + 3.4vw,4.6rem);
-  --step-4:clamp(2.1rem,1.4rem + 3.2vw,4rem);
-}
-
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%}
-@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{
-  background:var(--bone);color:var(--ink);
-  font-family:var(--font-body);font-size:var(--step-0);line-height:1.65;
-  font-weight:400;-webkit-font-smoothing:antialiased;
-  text-underline-offset:.18em;
-}
-img{max-width:100%;display:block;height:auto}
-
-/* ---------- a11y ---------- */
-.skip{
-  position:absolute;left:-9999px;top:0;z-index:200;
-  background:var(--ink);color:var(--bone);padding:.85rem 1.25rem;
-  font-size:var(--step--1);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;
-}
-.skip:focus{left:0}
-:focus-visible{outline:3px solid var(--verd-bright);outline-offset:3px;border-radius:2px}
-.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-
-/* ---------- nav ---------- */
-.topbar{
-  position:sticky;top:0;z-index:100;
-  background:color-mix(in srgb,var(--bone) 88%,transparent);
-  border-bottom:1px solid var(--rule);
-}
-@supports not (background:color-mix(in srgb,red 50%,transparent)){.topbar{background:var(--bone)}}
-@supports (backdrop-filter:blur(6px)){.topbar{backdrop-filter:blur(8px)}}
-.topbar-in{
-  max-width:1180px;margin:0 auto;padding:.7rem var(--pad);
-  display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;
-}
-.brand{
-  font-family:var(--font-display);font-size:1.02rem;font-weight:600;
-  letter-spacing:.005em;color:var(--ink);text-decoration:none;white-space:nowrap;
-}
-.brand:hover{color:var(--verd)}
-.nav{display:flex;gap:clamp(.85rem,2.2vw,1.9rem);list-style:none;flex-wrap:wrap}
-.nav a{
-  font-size:var(--step--1);letter-spacing:.09em;text-transform:uppercase;font-weight:500;
-  color:var(--ink-soft);text-decoration:none;padding:.3rem 0;
-  border-bottom:2px solid transparent;
-}
-.nav a:hover{color:var(--ink);border-bottom-color:var(--verd)}
-.nav a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--verd)}
-
-/* ---------- layout ---------- */
-.wrap{max-width:1180px;margin:0 auto;padding:0 var(--pad)}
-.band{border-top:1px solid var(--rule)}
-.row{
-  display:grid;grid-template-columns:var(--rail) minmax(0,1fr);
-  gap:var(--gap);padding:clamp(3.25rem,7vw,6.5rem) 0;
-}
-.rail{position:sticky;top:5.5rem;align-self:start}
-.rail .num{
-  font-family:var(--font-display);font-size:var(--step-1);font-weight:500;
-  color:var(--verd);display:block;line-height:1;
-}
-.rail .lab{
-  display:block;margin-top:.55rem;font-size:var(--step--1);letter-spacing:.11em;
-  text-transform:uppercase;color:var(--ink-faint);font-weight:600;
-}
-.rail::after{content:"";display:block;width:34px;height:2px;background:var(--rule);margin-top:1rem}
-.col{max-width:var(--measure)}
-
-h2{
-  font-family:var(--font-display);font-weight:500;font-size:var(--step-2);
-  line-height:1.12;letter-spacing:-.012em;margin-bottom:1.4rem;text-wrap:balance;
-}
-h3{
-  font-family:var(--font-display);font-weight:600;font-size:var(--step-1);
-  line-height:1.25;margin-bottom:.5rem;
-}
-p{margin-bottom:1.15rem;max-width:var(--measure)}
-p:last-child{margin-bottom:0}
-a{color:var(--verd-deep);text-decoration-thickness:1px}
-a:hover{color:var(--ink)}
-strong{font-weight:600}
-em{font-style:italic}
-
-/* ---------- hero ---------- */
-.hero{padding:clamp(3rem,8vw,7rem) 0 clamp(2.5rem,6vw,5rem)}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,.85fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
-.eyebrow{
-  font-size:var(--step--1);letter-spacing:.16em;text-transform:uppercase;
-  color:var(--ink-faint);font-weight:600;margin-bottom:1.5rem;
-}
-h1{
-  font-family:var(--font-display);font-weight:500;font-size:var(--step-3);
-  line-height:1.02;letter-spacing:-.025em;margin-bottom:1.75rem;text-wrap:balance;
-}
-h1 .accent{color:var(--verd);font-style:italic}
-.lede{font-size:var(--step-1);line-height:1.55;color:var(--ink);max-width:52ch}
-.lede + .lede{margin-top:1.15rem}
-.sub{margin-top:1.5rem;color:var(--ink-soft);max-width:56ch}
-.hero-actions{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2.25rem}
-
-.portrait{position:relative}
-.portrait{isolation:isolate}
-.portrait .frame{position:relative;overflow:hidden;border-radius:2px;background:var(--bone)}
-.portrait img{width:100%;filter:saturate(.9) contrast(1.03)}
-.portrait .frame::after{content:"";position:absolute;inset:0;background:var(--bone);mix-blend-mode:multiply;pointer-events:none}
-.portrait .frame + .bar{display:block;height:4px;background:var(--verd);margin-top:10px}
-.portrait figcaption{
-  margin-top:1.9rem;font-size:var(--step--1);color:var(--ink-faint);
-  line-height:1.55;border-left:2px solid var(--rule);padding-left:.9rem;
-}
-
-/* ---------- buttons / doc affordances ---------- */
-.btn{
-  display:inline-flex;align-items:center;gap:.6rem;
-  padding:.8rem 1.35rem;font-family:var(--font-body);font-size:var(--step--1);
-  font-weight:600;letter-spacing:.05em;text-transform:uppercase;
-  text-decoration:none;border-radius:2px;border:2px solid var(--verd);
-  background:var(--verd);color:var(--bone-lift);
-}
-.btn:hover{background:var(--verd-deep);border-color:var(--verd-deep);color:#fff}
-.btn .meta{font-weight:400;letter-spacing:.03em;text-transform:none;opacity:.85}
-.btn-ghost{background:transparent;color:var(--verd-deep);border-color:var(--verd)}
-.btn-ghost:hover{background:var(--verd);color:var(--bone-lift)}
-
-.tag-request{
-  display:inline-flex;align-items:center;gap:.55rem;
-  padding:.7rem 1.1rem;font-size:var(--step--1);font-weight:500;
-  color:var(--ink-soft);background:transparent;
-  border:1px dashed var(--ink-faint);border-radius:2px;
-}
-.tag-request a{color:var(--verd-deep);font-weight:600}
-
-/* ---------- document cards ---------- */
-.docs{display:grid;gap:1.5rem;margin-top:2.25rem}
-.doc{
-  background:var(--bone-lift);border:1px solid var(--rule);
-  border-left:5px solid var(--verd);border-radius:2px;
-  padding:clamp(1.35rem,3vw,2rem);
-}
-.doc .kicker{
-  font-size:var(--step--1);letter-spacing:.12em;text-transform:uppercase;
-  color:var(--verd);font-weight:600;margin-bottom:.6rem;
-}
-.doc h3{margin-bottom:.7rem}
-.doc .where{font-size:var(--step--1);color:var(--ink-faint);margin-bottom:1rem}
-.doc p{font-size:calc(var(--step-0) * .97)}
-.doc .act{margin-top:1.35rem}
-.doc-quiet{background:transparent;border-style:dashed;border-left:5px dashed var(--ink-faint)}
-.doc-quiet .kicker{color:var(--ink-faint)}
-
-/* ---------- feature quote ---------- */
-.feature{background:var(--ink);color:var(--bone);padding:clamp(3.5rem,9vw,7rem) 0}
-.feature .wrap{max-width:1180px}
-.feature blockquote{
-  font-family:var(--font-display);font-weight:400;
-  font-size:var(--step-4);line-height:1.16;letter-spacing:-.018em;
-  max-width:22ch;text-wrap:balance;
-}
-.feature .lead-in{
-  font-size:var(--step--1);letter-spacing:.16em;text-transform:uppercase;
-  color:var(--verd-bright);font-weight:600;margin-bottom:2rem;
-}
-.feature .say{color:var(--verd-bright);font-style:italic}
-.feature cite{
-  display:block;margin-top:2.5rem;font-style:normal;font-size:var(--step--1);
-  color:#A9AFAF;line-height:1.6;max-width:44ch;border-top:1px solid #333A3B;padding-top:1.1rem;
-}
-
-/* ---------- contact ---------- */
-.contact-grid{display:grid;gap:2rem 2.5rem;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin-top:2rem}
-#contact .col{max-width:74ch}
-.contact-grid h3{font-size:var(--step-0);font-family:var(--font-body);font-weight:600;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:.6rem}
-.contact-grid p{font-size:var(--step-0)}
-.mail{font-family:var(--font-display);font-size:var(--step-1);font-weight:500}
-
-footer{border-top:1px solid var(--rule);padding:2.5rem 0 3.5rem;color:var(--ink-faint);font-size:var(--step--1)}
-footer p{max-width:var(--measure)}
-
-/* ---------- responsive ---------- */
-@media (max-width:900px){
-  .row{grid-template-columns:1fr;gap:1.5rem;}
-  .rail{position:static;display:flex;align-items:baseline;gap:.8rem}
-  .rail .num{font-size:var(--step-0)}
-  .rail .lab{margin-top:0}
-  .rail::after{display:none}
-  .hero-grid{grid-template-columns:1fr;gap:2.5rem}
-  .portrait{max-width:320px}
-  .feature blockquote{max-width:none}
-}
-@media (max-width:620px){
-  .topbar-in{padding:.55rem var(--pad);gap:.45rem}
-  .nav{gap:.8rem}
-  .nav a{font-size:.78rem;letter-spacing:.06em}
-  .wideonly{display:none}
-  .brand{font-size:.95rem}
-  .btn{width:100%;justify-content:center}
-  .hero-actions{flex-direction:column;align-items:stretch}
-}
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
-    transition-duration:.001ms!important;scroll-behavior:auto!important}
-}
-@media print{
-  .topbar,.hero-actions,.doc .act{display:none}
-  body{background:#fff;color:#000}
-  .feature{background:#fff;color:#000}
-}
-</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Caleb Johnston",
+    "url": "https://caleb-johnston.com/",
+    "image": "https://caleb-johnston.com/assets/photos/caleb-johnston-headshot-900.jpg",
+    "email": "mailto:johnston.caleb325@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Washington",
+      "addressRegion": "DC",
+      "addressCountry": "US"
+    },
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "University of Texas at Austin"},
+      {"@type": "CollegeOrUniversity", "name": "Georgetown University"}
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/caleb-david-johnston"
+    ],
+    "knowsAbout": [
+      "Public policy research",
+      "Program operations",
+      "Reentry",
+      "Political research",
+      "Qualitative research",
+      "Quantitative analysis"
+    ]
+  }
+  </script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<header class="topbar">
-  <div class="topbar-in">
-    <a class="brand" href="#top">Caleb Johnston</a>
-    <nav aria-label="Sections">
-      <ul class="nav">
-        <li><a href="#reentry">Reentry</a></li>
-        <li><a href="#capstone">Capstone</a></li>
-        <li><a href="#writing">Writing</a></li>
-        <li><a href="#field">Field<span class="wideonly">&nbsp;work</span></a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Caleb Johnston, home">
+        <span class="brand-mark" aria-hidden="true">CJ</span>
+        <span class="brand-name">Caleb Johnston</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#beyond">Beyond</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="nav-resume" href="/docs/caleb-johnston-resume.pdf">Résumé <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<main id="main">
-  <div id="top"></div>
-
-  <!-- ============ HERO ============ -->
-  <section class="hero wrap" aria-labelledby="h1">
-    <div class="hero-grid">
-      <div>
-        <p class="eyebrow">Washington, D.C.</p>
-        <h1 id="h1">Institutions are experienced at the <span class="accent">front desk.</span></h1>
-        <p class="lede">I am finishing an M.A. in American Government at Georgetown this August, and I work as a Reentry Assistant at the university’s Prisons and Justice Initiative. Most of what I understand about how government actually reaches people, I have learned from the side of the desk where they come to ask it for something.</p>
-        <p class="sub">My work keeps landing in the same place: the distance between what an institution promises on paper and what a person meets when they walk in. I am looking for research, advocacy, campaign, or nonprofit work on democratic accountability and criminal-legal reform. I use AI tooling as a standing part of my practice to move faster through research and outreach.</p>
-        <div class="hero-actions">
-          <a class="btn" href="docs/johnston-public-safety-memo.pdf">Read my policy memo <span class="meta">PDF · 11 pp</span></a>
-          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-grid wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">Washington, D.C. · Policy · Operations · Research</p>
+          <h1 id="hero-title">Public service, from research to implementation.</h1>
+          <p class="hero-lede">I study how institutions work, help teams make them work better, and stay attentive to the people who experience their rules every day.</p>
+          <div class="button-row" aria-label="Primary actions">
+            <a class="button button-primary" href="/docs/caleb-johnston-resume.pdf">Download résumé <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="#work">Explore my work <span aria-hidden="true">→</span></a>
+          </div>
+          <ul class="focus-list" aria-label="Areas of focus">
+            <li>Public-interest research</li>
+            <li>Program operations</li>
+            <li>Justice and reentry</li>
+            <li>Institutional effectiveness</li>
+          </ul>
         </div>
+
+        <figure class="hero-portrait">
+          <picture>
+            <source srcset="/assets/photos/caleb-johnston-headshot-480.webp 480w, /assets/photos/caleb-johnston-headshot-900.webp 900w" type="image/webp">
+            <img src="/assets/photos/caleb-johnston-headshot-900.jpg" srcset="/assets/photos/caleb-johnston-headshot-480.jpg 480w, /assets/photos/caleb-johnston-headshot-900.jpg 900w" sizes="(max-width: 760px) 78vw, 34vw" width="900" height="900" alt="Caleb Johnston smiling in a navy blazer against a light gray background.">
+          </picture>
+          <figcaption>Caleb Johnston · Washington, D.C.</figcaption>
+        </figure>
       </div>
-      <figure class="portrait">
-        <span class="frame"><img src="assets/caleb-johnston.jpg"
-             srcset="assets/caleb-johnston@450.jpg 450w, assets/caleb-johnston.jpg 900w"
-             sizes="(max-width:900px) 320px, 30vw"
-             width="900" height="1200"
-             alt="Portrait of Caleb Johnston."></span><span class="bar" aria-hidden="true"></span>
-        <figcaption>M.A., American Government, Georgetown University, conferred August 2026. B.A., Economics and Government, the University of Texas at Austin.</figcaption>
-      </figure>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ 01 REENTRY ============ -->
-  <section id="reentry" class="band" aria-labelledby="h-reentry">
-    <div class="wrap row">
-      <div class="rail"><span class="num">01</span><span class="lab">Reentry</span></div>
-      <div class="col">
-        <h2 id="h-reentry">The front desk turned out to be a vantage point.</h2>
-        <p>At Georgetown’s Prisons and Justice Initiative I am often the first person someone meets — students, staff, community members, partner organizations, and people calling to find out whether we can help at all. I support PJI’s six programs across prison education, reentry services, and wrongful-conviction work — PIVOT, the Paralegal Program, the Scholars Program, the Bachelor of Liberal Arts program, Making an Exoneree, and the Family First Initiative. In practice that means keeping participant records and program documentation in order, running outreach, fulfilling research requests for students, and sitting with people as they work through housing, identity documents, phone service, storage, and online portals that were plainly not designed with them in mind.</p>
-        <p>I support and observe intake interviews and reentry assessments. I do not conduct them independently. Separately, I research and build profiles of reentry service providers across D.C. and Maryland — housing, employment, and other resources — so that the organization’s referrals rest on something current rather than something remembered.</p>
-        <p>The part that changed how I think is smaller than any of that. Reentry is rarely settled in a hearing. It is settled in whether the person who picks up the phone knows which form you need, and whether they treat the asking as a nuisance or as the job. Georgetown wrote about that shift in <a href="https://prisonsandjustice.georgetown.edu/news/the-small-often-invisible-moments-that-matter/">a profile of my work at PJI</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ FEATURE QUOTE ============ -->
-  <aside class="feature" aria-labelledby="h-feature">
-    <div class="wrap">
-      <p class="lead-in" id="h-feature">From the conclusion of my capstone</p>
-      <blockquote>Reentry is governed — but by an archipelago of intermediaries absorbing the coordination costs a fragmented state declines to bear, with the returning citizen’s experience of government <span class="say">substantially outsourced to whoever answers the phone.</span></blockquote>
-      <cite>&ldquo;Our Sacred Space&rdquo;: Governance of Reentry at Georgetown’s Prisons and Justice Initiative. M.A. capstone, Georgetown University, July 2026.</cite>
-    </div>
-  </aside>
-
-  <!-- ============ 02 CAPSTONE ============ -->
-  <section id="capstone" class="band" aria-labelledby="h-capstone">
-    <div class="wrap row">
-      <div class="rail"><span class="num">02</span><span class="lab">Capstone</span></div>
-      <div class="col">
-        <h2 id="h-capstone">So I spent seven months studying the organization I work for.</h2>
-        <p>My M.A. capstone asks whether the frontline reentry practices of a nongovernmental organization interrupt, soften, or reproduce punitive governance — and what the answer reveals about reentry as a governance problem. In the District, custody and supervision belong to federal agencies and identity documents to District agencies, while the connective work of interpreting rules and moving people between institutions falls to intermediaries the formal system neither commands nor replaces.</p>
-        <p>It is a single-case qualitative study conducted from inside the organization between January and July 2026: nine recorded interviews with staff, faculty, and program participants; fifteen weekly field journals; participant observation; and a documentary record assembled to check the organization’s account of itself against sources it does not control.</p>
-        <p>The finding is that all three verbs hold at once, and that their distribution tracks control. The paper develops a framework of three regimes of discretion for analyzing nongovernmental intermediaries as governing actors, argues that their most consequential outcomes are structurally unobservable, and sets out implementation recommendations. Its conclusion locates the constraint in the design of the reentry field rather than in any single organization’s performance.</p>
-        <div class="doc doc-quiet" style="margin-top:2rem">
-          <p class="kicker">Not posted here</p>
-          <h3>&ldquo;Our Sacred Space&rdquo;: Governance of Reentry at Georgetown’s Prisons and Justice Initiative</h3>
-          <p class="where">M.A. capstone · Georgetown University · 59 pages · July 2026</p>
-          <p>The paper draws on confidential interview material, so I am not publishing it. I am glad to send it to anyone considering me for a role.</p>
-          <p class="act"><span class="tag-request">Full paper available on request — <a class="js-mail" href="#contact">email me</a></span></p>
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div>
+          <p class="eyebrow">Why public service</p>
+          <h2 id="about-title">Understanding institutions before trying to lead them.</h2>
         </div>
+        <div class="about-story prose">
+          <p>Growing up, I saw how addiction, economic hardship, justice-system involvement, and institutional indifference can narrow people’s choices. That experience did not give me easy answers. It gave me a responsibility to learn how public systems actually work before claiming I could improve them.</p>
+          <p>That is why my path crosses research, reentry services, teaching, campaign operations, and political data. I am interested in the gap between what a policy promises and what a person encounters: the handoff that fails, the rule no one explains, the dataset that hides a lived reality, or the procedure that quietly restores dignity.</p>
+          <p>I completed all requirements for Georgetown University’s M.A. in American Government; degree conferral is expected in August 2026. I earned a B.A. in Economics and Government from the University of Texas at Austin in 2024.</p>
+        </div>
+        <aside class="signature-idea" aria-labelledby="signature-title">
+          <p class="mini-label">A guiding idea</p>
+          <h3 id="signature-title">Institutions are experienced at the front desk.</h3>
+          <p>The quality of a public system is often revealed in its ordinary moments: whether someone receives a clear answer, a respectful handoff, and a path forward.</p>
+        </aside>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ 03 WRITING ============ -->
-  <section id="writing" class="band" aria-labelledby="h-writing">
-    <div class="wrap row">
-      <div class="rail"><span class="num">03</span><span class="lab">Writing</span></div>
-      <div class="col">
-        <h2 id="h-writing">Work you can open and read.</h2>
-        <p>Three pieces are posted here in full. Each one is my own writing, and each says plainly what it can and cannot support.</p>
+    <aside class="feature-strip" aria-label="Georgetown feature">
+      <div class="wrap feature-inner">
+        <div class="feature-kicker">
+          <span aria-hidden="true">✦</span>
+          <span>Featured by Georgetown’s Prisons and Justice Initiative</span>
+        </div>
+        <div class="feature-copy">
+          <h2><a href="https://prisonsandjustice.georgetown.edu/news/the-small-often-invisible-moments-that-matter/">The Small, Often Invisible Moments That Matter</a></h2>
+          <p>A July 2026 feature on my reentry and operations work—and what everyday interactions reveal about dignity, language, and institutional support.</p>
+        </div>
+        <a class="feature-link" href="https://prisonsandjustice.georgetown.edu/news/the-small-often-invisible-moments-that-matter/" aria-label="Read the Georgetown feature, The Small, Often Invisible Moments That Matter">Read the feature <span aria-hidden="true">↗</span></a>
+      </div>
+    </aside>
 
-        <div class="docs">
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Work &amp; service</p>
+            <h2 id="work-title">Research with an operational point of view.</h2>
+          </div>
+          <p>I am most useful where analysis has to become a procedure, a resource, a decision, or a better experience for someone else.</p>
+        </div>
 
-          <article class="doc">
-            <p class="kicker">Policy memo</p>
-            <h3>A Two-Tier Strategy for Public Safety around Banner Lane and Sursum Corda</h3>
-            <p class="where">Written for the D.C. Council Committee on the Judiciary and Public Safety · 11 pages · 2025</p>
-            <p>Banner Lane and the surrounding Sursum Corda neighborhood in Ward 6 have absorbed decades of violence and disinvestment, and a 2015 settlement that added lighting and cameras did not resolve it. The memo recommends pairing two tiers. The first is Crime Prevention Through Environmental Design — sightlines, lighting, lot maintenance, and remediation of vacant land — which is cheap and fast. The second is social investment: youth employment, addiction treatment and drug courts, and community violence intervention. It weighs the alternatives against a do-nothing baseline, addresses the displacement objection directly, and closes with phased implementation, funding, and accountability measures.</p>
-            <p>I started reading this literature after a mugging in the neighborhood the memo covers.</p>
-            <p class="act"><a class="btn" href="docs/johnston-public-safety-memo.pdf">Read the memo <span class="meta">PDF · 11 pp</span></a></p>
+        <article class="spotlight-card">
+          <figure class="spotlight-image">
+            <picture>
+              <source srcset="/assets/photos/pji-front-desk.webp" type="image/webp">
+              <img src="/assets/photos/pji-front-desk.jpg" width="960" height="1200" loading="lazy" alt="Caleb Johnston at the front desk of Georgetown’s Prisons and Justice Initiative beside a Georgetown bulldog mascot.">
+            </picture>
+          </figure>
+          <div class="spotlight-content">
+            <p class="card-meta">Georgetown Prisons &amp; Justice Initiative · 2026</p>
+            <h3>Operations &amp; Reentry Assistant</h3>
+            <p>I supported higher education, legal training, and reentry work while improving the everyday systems that hold a public-facing office together.</p>
+            <ul class="check-list">
+              <li>Supported services reaching more than a dozen incarcerated learners and approximately 50 returning citizens.</li>
+              <li>Coordinated three end-to-end paralegal exam administrations, including two for a 15-person cohort and one makeup.</li>
+              <li>Inventoried and reorganized three workspaces, structuring quantity and location data for thousands of supply items.</li>
+              <li>Conducted three mock interviews, maintained an employment-opportunity tracker, helped onboard one intern, and documented front-desk procedures.</li>
+            </ul>
+            <div class="metric-row" aria-label="Selected PJI metrics">
+              <div><strong>3</strong><span>exam administrations</span></div>
+              <div><strong>3</strong><span>workspaces reorganized</span></div>
+              <div><strong>9 + 15</strong><span>capstone interviews + field journals</span></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="work-grid">
+          <article class="work-card">
+            <figure>
+              <picture>
+                <source srcset="/assets/photos/ward-5-campaign.webp" type="image/webp">
+                <img src="/assets/photos/ward-5-campaign.jpg" width="1200" height="900" loading="lazy" alt="Caleb Johnston staffing a Bernita Carmichael for Ward 5 Council outreach table.">
+              </picture>
+            </figure>
+            <div class="work-card-body">
+              <p class="card-meta">Local democracy · 2026</p>
+              <h3>Deputy Campaign Manager</h3>
+              <p>Managed 10+ volunteers across canvassing, phone banking, and community events; represented the candidate at 10+ public events and translated constituent concerns into campaign priorities.</p>
+              <p class="card-note">Carmichael for Ward 5 Council · Campaign total: 2,723 votes</p>
+            </div>
           </article>
 
-          <article class="doc">
-            <p class="kicker">Quantitative research</p>
-            <h3>Recreational Marijuana Legalization and Weekly Hours Worked: A State-Level Econometric Analysis</h3>
-            <p class="where">Undergraduate capstone · The University of Texas at Austin · 20 pages · 2024</p>
-            <p>I built an OLS model in Stata on 2021 cross-sectional data covering all fifty states, drawing labor, wage, health, education, demographic, and cannabis-policy measures from the Bureau of Labor Statistics, the CDC, FRED, and the Census Bureau. I ran diagnostics for multicollinearity and heteroskedasticity and reported a logged alternative specification alongside the main model.</p>
-            <p>It finds a modest negative association between legalization and weekly hours worked, significant only at the ten percent level. With fifty observations and a single cross-section of aggregate data, the design cannot support a causal claim, and I would not defend it as more than exploratory. I am posting it because the limitations are the honest part of the exercise.</p>
-            <p class="act"><a class="btn" href="docs/johnston-econometrics-marijuana-hours.pdf">Read the paper <span class="meta">PDF · 20 pp</span></a></p>
+          <article class="work-card">
+            <figure>
+              <picture>
+                <source srcset="/assets/photos/georgetown-teaching.webp" type="image/webp">
+                <img src="/assets/photos/georgetown-teaching.jpg" width="1200" height="900" loading="lazy" alt="Caleb Johnston leading a classroom discussion beside a projected slide on international relations.">
+              </picture>
+            </figure>
+            <div class="work-card-body">
+              <p class="card-meta">Teaching · 2025–2026</p>
+              <h3>Graduate Teaching Assistant</h3>
+              <p>Led weekly discussion sections for approximately 40 students across U.S. politics and international relations, creating slides and review guides and providing feedback on written work.</p>
+              <p class="card-note">Georgetown University · Department of Government</p>
+            </div>
           </article>
 
-          <article class="doc">
-            <p class="kicker">Research assistantship</p>
-            <h3>Winners and Losers: Electoral Rhetoric and Democratic Norms</h3>
-            <p class="where">Research assistant to Prof. Bethany Albertson · UT Austin, Department of Government · Summer 2024</p>
-            <p>This was faculty-led research, not my own scholarship. I built candidate-level records for presidential, Senate, House, and gubernatorial races from 2000 to 2024 — party, incumbency, vote share, margin, winner and loser status, seat flips — and located and verified the victory and concession statements attached to them. I then applied coding indicators for democratic-norm language: unity appeals, references to democracy, voter-fraud claims, recount and litigation context, and whether candidates spoke to each other.</p>
-            <p>The document below is my own sanitized summary of what I contributed. It deliberately excludes the underlying dataset and response material, which belong to the project rather than to me.</p>
-            <p class="act"><a class="btn" href="docs/johnston-winners-and-losers-brief.pdf">Read the brief <span class="meta">PDF · 2 pp</span></a></p>
+          <article class="work-card text-card">
+            <div class="work-card-body">
+              <p class="card-meta">Political research · 2024</p>
+              <h3>Electoral legitimacy research</h3>
+              <p>Built and quality-checked a dataset spanning hundreds of federal and gubernatorial races from 2000 to 2024. Coded approximately 100 victory and concession statements for democratic-norm language, recounts, and litigation context.</p>
+              <p class="card-note">University of Texas at Austin · Department of Government</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section writing" id="writing" aria-labelledby="writing-title">
+      <div class="wrap">
+        <div class="section-heading light-heading">
+          <div>
+            <p class="eyebrow">Research &amp; writing</p>
+            <h2 id="writing-title">Selected work, made useful for a public audience.</h2>
+          </div>
+          <p>These short briefs preserve the question, method, evidence, and limits of each project. Full papers are not posted automatically—especially where participants or internal material require care.</p>
+        </div>
+
+        <div class="writing-grid">
+          <article class="writing-card flagship">
+            <div>
+              <p class="writing-type">Qualitative capstone · Flagship</p>
+              <h3>“Our Sacred Space”: Governance of Reentry</h3>
+              <p>A six-month embedded case study using nine recorded interviews, 15 field journals, participant observation, and document analysis. The project develops a three-regime framework for understanding how intermediary organizations use—and confront—their discretion.</p>
+            </div>
+            <div class="card-footer">
+              <span>59-page full paper kept private</span>
+              <a href="/docs/caleb-johnston-capstone-brief.pdf">Read the 1-page brief <span aria-hidden="true">↗</span></a>
+            </div>
           </article>
 
+          <article class="writing-card">
+            <div>
+              <p class="writing-type">Quantitative analysis</p>
+              <h3>Cannabis Policy &amp; Manufacturing Work Hours</h3>
+              <p>A 50-state OLS analysis with diagnostics and a logged specification. The brief foregrounds the project’s limited cross-sectional design and treats the observed association as exploratory rather than causal.</p>
+            </div>
+            <div class="card-footer">
+              <span>Stata · Model interpretation</span>
+              <a href="/docs/caleb-johnston-econometrics-brief.pdf">Read the 1-page brief <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="writing-card">
+            <div>
+              <p class="writing-type">Research design proposal</p>
+              <h3>When Identity Becomes Political</h3>
+              <p>A proposed randomized survey experiment on whether activating different dimensions of identity changes political attitudes among multiracial adults. No data were collected and no results are claimed.</p>
+            </div>
+            <div class="card-footer">
+              <span>Survey experiment · Causal design</span>
+              <a href="/docs/caleb-johnston-identity-survey-design-brief.pdf">Read the 1-page brief <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="writing-card">
+            <div>
+              <p class="writing-type">Academic policy memo</p>
+              <h3>A Two-Tier Strategy for Place-Based Public Safety</h3>
+              <p>A classroom policy exercise comparing the status quo, environmental-design interventions, and a combined social-investment strategy, with phased implementation and accountability recommendations.</p>
+            </div>
+            <div class="card-footer">
+              <span>Not commissioned by the D.C. Council</span>
+              <a href="/docs/caleb-johnston-public-safety-policy-brief.pdf">Read the 1-page brief <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <p class="availability-note">Full paper available upon request. Availability may depend on participant privacy, organizational sensitivity, and the needs of a specific application.</p>
+      </div>
+    </section>
+
+    <section class="section beyond" id="beyond" aria-labelledby="beyond-title">
+      <div class="wrap beyond-grid">
+        <div class="beyond-copy">
+          <p class="eyebrow">Beyond the work</p>
+          <h2 id="beyond-title">Preparing for a career of public responsibility.</h2>
+          <div class="prose">
+            <p>I do not see public service as a title to claim early. I see it as a practice: listening carefully, doing the unglamorous operational work, testing assumptions against evidence, and taking responsibility for what happens after a recommendation leaves the page.</p>
+            <p>The common thread across my work is a desire to earn larger responsibility by first becoming dependable in smaller moments. Outside work, I recharge with dogs, basketball, and the friends and family who keep ambition grounded.</p>
+          </div>
+          <a class="text-link" href="#contact">Start a conversation <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="photo-pair">
+          <figure class="photo-card graduation-card">
+            <picture>
+              <source srcset="/assets/photos/georgetown-commencement.webp" type="image/webp">
+              <img src="/assets/photos/georgetown-commencement.jpg" width="800" height="1000" loading="lazy" alt="Caleb Johnston wearing master’s graduation regalia outside a Georgetown campus building.">
+            </picture>
+            <figcaption>Georgetown commencement, 2026. Degree requirements completed; conferral expected August 2026.</figcaption>
+          </figure>
+          <figure class="photo-card dog-card">
+            <picture>
+              <source srcset="/assets/photos/caleb-and-dog.webp" type="image/webp">
+              <img src="/assets/photos/caleb-and-dog.jpg" width="900" height="900" loading="lazy" alt="Caleb Johnston smiling while holding a tan dog.">
+            </picture>
+            <figcaption>A reliable reminder to step away from the screen.</figcaption>
+          </figure>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ 04 FIELD ============ -->
-  <section id="field" class="band" aria-labelledby="h-field">
-    <div class="wrap row">
-      <div class="rail"><span class="num">04</span><span class="lab">Field work</span></div>
-      <div class="col">
-        <h2 id="h-field">The unglamorous half, which is most of it.</h2>
-
-        <h3>Carmichael for Ward 5 Council</h3>
-        <p class="where" style="font-size:var(--step--1);color:var(--ink-faint);margin-bottom:.9rem">Deputy campaign manager · February – June 2026</p>
-        <p>I ran field and operations for Bernita Carmichael’s campaign for the Ward 5 seat on the D.C. Council. The campaign lost. I coordinated a field team of ten volunteers across canvassing, phone banking, and community events; supported ballot-access verification by helping with technical review and compliance documentation against Board of Elections thresholds; organized two campaign events and represented the candidate at roughly ten more, including a D.C. teacher summit; and handled the logistics, including late-night runs to get materials where they needed to be by morning. I drafted volunteer briefings and outreach materials.</p>
-
-        <h3 style="margin-top:2.25rem">Teaching</h3>
-        <p class="where" style="font-size:var(--step--1);color:var(--ink-faint);margin-bottom:.9rem">Graduate teaching assistant, Department of Government, Georgetown · August 2025 – May 2026</p>
-        <p>I led weekly discussion sections for about forty undergraduates across two semesters — one course in the fall, then two sections of a different course in the spring — in The U.S. Political System and Introduction to International Relations. Teaching is where I learned to explain institutions to people meeting them for the first time.</p>
-
-        <h3 style="margin-top:2.25rem">Pappasito’s Cantina</h3>
-        <p class="where" style="font-size:var(--step--1);color:var(--ink-faint);margin-bottom:.9rem">Waiter, headwaiter, bartender, to-go · 2021 – 2025</p>
-        <p>I worked at Pappasito’s for four years while I was in college, at high-volume locations in Houston and Austin, and I was still doing it the year I started applying to graduate school.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 05 CONTACT ============ -->
-  <section id="contact" class="band" aria-labelledby="h-contact">
-    <div class="wrap row">
-      <div class="rail"><span class="num">05</span><span class="lab">Contact</span></div>
-      <div class="col">
-        <h2 id="h-contact">Get in touch.</h2>
-        <p>I am actively looking for full-time work beginning after my degree is conferred in August 2026, in campaigns, advocacy organizations, think tanks, or nonprofits.</p>
-        <div class="contact-grid">
-          <div>
-            <h3>Email</h3>
-            <p class="mail" id="mail-slot"><span class="js-mail-text">cj691 [at] georgetown [dot] edu</span></p>
-          </div>
-          <div>
-            <h3>Elsewhere</h3>
-            <p><a href="https://www.linkedin.com/in/caleb-david-johnston/">LinkedIn</a></p>
-          </div>
-          <div>
-            <h3>Focus</h3>
-            <p>Democratic accountability and criminal-legal reform.</p>
-          </div>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-inner">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s make public systems work better.</h2>
+          <p>I am exploring public-interest opportunities in policy research, program operations, justice, government, and mission-driven organizations.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-link" href="mailto:johnston.caleb325@gmail.com">
+            <span>Email</span>
+            <strong>johnston.caleb325@gmail.com</strong>
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/caleb-david-johnston">
+            <span>LinkedIn</span>
+            <strong>linkedin.com/in/caleb-david-johnston</strong>
+          </a>
+          <a class="contact-link" href="/docs/caleb-johnston-resume.pdf">
+            <span>Résumé</span>
+            <strong>Download PDF</strong>
+          </a>
         </div>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Caleb Johnston</p>
+      <p>Built with care in Washington, D.C.</p>
+      <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
     </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <p>&copy; <span id="yr">2026</span> Caleb Johnston. Washington, D.C. Set in Fraunces and Public Sans.</p>
-  </div>
-</footer>
-
-<script>
-(function(){
-  "use strict";
-  // Email assembled at runtime so the address is not sitting in the markup for scrapers.
-  var u="cj691",d=["georgetown","edu"].join(".");
-  var addr=u+String.fromCharCode(64)+d;
-  var slot=document.getElementById("mail-slot");
-  if(slot){
-    var a=document.createElement("a");
-    a.href="mailto:"+addr; a.textContent=addr; a.rel="nofollow";
-    slot.textContent=""; slot.appendChild(a);
-  }
-  Array.prototype.forEach.call(document.querySelectorAll("a.js-mail"),function(el){
-    el.href="mailto:"+addr;
-  });
-  var y=document.getElementById("yr"); if(y){y.textContent=new Date().getFullYear();}
-
-  // Nav highlighting.
-  var links=Array.prototype.slice.call(document.querySelectorAll(".nav a"));
-  var map={};
-  links.forEach(function(l){ map[l.getAttribute("href").slice(1)]=l; });
-  if("IntersectionObserver" in window){
-    var obs=new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        var l=map[e.target.id]; if(!l) return;
-        if(e.isIntersecting){
-          links.forEach(function(x){x.removeAttribute("aria-current");});
-          l.setAttribute("aria-current","true");
-        }
-      });
-    },{rootMargin:"-45% 0px -50% 0px"});
-    ["reentry","capstone","writing","field","contact"].forEach(function(id){
-      var el=document.getElementById(id); if(el) obs.observe(el);
-    });
-  }
-})();
-</script>
+  </footer>
 </body>
 </html>
