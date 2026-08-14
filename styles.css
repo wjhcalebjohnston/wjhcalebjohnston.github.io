@@ -221,6 +221,17 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
 .spotlight-image { min-height: 100%; margin: 0; background: var(--navy-100); }
 .spotlight-image picture, .spotlight-image img { width: 100%; height: 100%; }
 .spotlight-image img { object-fit: cover; }
+.pji-synthesis .spotlight-image {
+  display: flex;
+  max-height: none;
+  min-height: 100%;
+  padding: clamp(1rem, 2.2vw, 1.6rem);
+  align-items: center;
+  justify-content: center;
+  background: var(--navy-950);
+}
+.pji-synthesis .spotlight-image picture { display: block; width: 100%; max-width: 480px; height: auto; margin-inline: auto; }
+.pji-synthesis .spotlight-image img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: contain; object-position: center; border-radius: 14px; }
 .spotlight-content { padding: clamp(2rem, 5vw, 4.8rem); }
 .spotlight-content > p:not(.card-meta) { color: #40515f; font-size: 1.08rem; }
 .check-list { margin: 1.5rem 0 2rem; padding: 0; list-style: none; }
@@ -252,6 +263,12 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
 .service-foundation-grid article { padding-left: 1.25rem; border-left: 2px solid var(--gold-400); }
 .service-foundation-grid h4 { color: var(--navy-900); }
 .service-foundation-grid p:last-child { margin: 0; color: #40515f; }
+.service-photo { grid-column: 1 / -1; display: grid; overflow: hidden; grid-template-columns: minmax(150px, 0.42fr) minmax(0, 1fr); margin: 0.4rem 0 0; color: var(--white); background: var(--navy-900); border-radius: 14px; }
+.service-photo picture { display: block; min-height: 190px; }
+.service-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.service-photo figcaption { display: grid; padding: 1.4rem 1.6rem; align-content: center; gap: 0.45rem; }
+.service-photo figcaption strong { color: #e7cf9e; font-family: var(--serif); font-size: 1.25rem; }
+.service-photo figcaption span { color: #d7e0e7; font-size: 0.9rem; }
 .service-bridge { grid-column: 1 / -1; max-width: 940px; margin: 0; padding-top: 1.35rem; color: var(--navy-900); border-top: 1px solid var(--gold-200); font-family: var(--serif); font-size: 1.08rem; font-style: italic; }
 .chapter-turn { display: grid; grid-template-columns: repeat(3, 1fr); margin: clamp(2.5rem, 5vw, 4rem) 0; color: var(--navy-900); font-family: var(--serif); font-size: clamp(1.05rem, 1.8vw, 1.35rem); font-style: italic; text-align: center; }
 .chapter-turn span { position: relative; padding: 0.7rem 1.4rem; }
@@ -266,20 +283,27 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
 .light-heading h2 { color: var(--white); }
 .light-heading .eyebrow { color: #e2c792; }
 .light-heading > p { color: #c8d4dc; }
-.writing-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
-.writing-card { display: flex; min-height: 350px; padding: clamp(1.6rem, 3.3vw, 2.7rem); flex-direction: column; justify-content: space-between; background: #102f4e; border: 1px solid rgb(255 255 255 / 13%); border-radius: var(--radius-md); transition: border-color 160ms ease, transform 160ms ease; }
+.writing-portfolio { display: grid; gap: 1.45rem; }
+.writing-support-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.writing-card { display: flex; min-height: 410px; padding: clamp(1.6rem, 2.7vw, 2.35rem); flex-direction: column; justify-content: space-between; background: #102f4e; border: 1px solid rgb(255 255 255 / 13%); border-radius: var(--radius-md); transition: border-color 160ms ease, transform 160ms ease; }
 .writing-card:hover { border-color: var(--gold-400); transform: translateY(-3px); }
-.writing-card.flagship { background: linear-gradient(135deg, rgb(24 60 94 / 96%), rgb(14 42 71 / 96%)), var(--navy-900); border-color: var(--gold-400); }
+.writing-card.flagship { min-height: 0; padding: clamp(1.8rem, 4vw, 3.4rem); background: radial-gradient(circle at 86% 12%, rgb(176 141 87 / 18%), transparent 34%), linear-gradient(135deg, rgb(24 60 94 / 98%), rgb(14 42 71 / 98%)); border-color: var(--gold-400); }
+.flagship-label { display: flex; margin-bottom: 2rem; align-items: center; justify-content: space-between; gap: 1rem; color: #e2c792; font-size: 0.74rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.flagship-body { display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(300px, 0.78fr); align-items: start; gap: 2rem clamp(3rem, 6vw, 6rem); }
+.flagship-body h3 { max-width: 760px; margin-bottom: 0; font-size: clamp(2.2rem, 4vw, 3.55rem); }
+.flagship-body > p { margin: 0; color: #d7e0e7; font-size: 1rem; line-height: 1.75; }
 .writing-type { color: #e2c792; }
 .writing-card h3 { color: var(--white); }
+.writing-support-grid .writing-card h3 { font-size: clamp(1.32rem, 1.7vw, 1.72rem); line-height: 1.15; }
 .writing-card p:not(.writing-type) { color: #d4dee5; }
-.card-footer { display: flex; margin-top: 2rem; padding-top: 1.2rem; align-items: center; justify-content: space-between; gap: 1rem; border-top: 1px solid rgb(255 255 255 / 14%); font-size: 0.82rem; }
+.card-footer { display: flex; margin-top: 2rem; padding-top: 1.2rem; align-items: flex-start; flex-direction: column; justify-content: space-between; gap: 0.9rem; border-top: 1px solid rgb(255 255 255 / 14%); font-size: 0.82rem; }
+.flagship .card-footer { align-items: center; flex-direction: row; }
 .card-footer span:first-child { color: #aebdc8; }
-.card-footer a { color: var(--white); font-weight: 800; text-align: right; }
+.card-footer a { display: inline-flex; min-height: 44px; align-items: center; color: var(--white); font-weight: 800; text-align: left; }
 .availability-note { max-width: 880px; margin: 2.2rem auto 0; color: #bac8d2; font-size: 0.84rem; text-align: center; }
 
 .beyond { background: var(--ivory); }
-.beyond-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.65fr); align-items: center; gap: clamp(3rem, 7vw, 7rem); }
+.beyond-grid { display: grid; grid-template-columns: minmax(0, 0.82fr) minmax(460px, 1.18fr); align-items: center; gap: clamp(3rem, 6vw, 6rem); }
 .beyond-copy h2 { max-width: 680px; }
 .text-link { display: inline-flex; min-height: 48px; margin-top: 0.5rem; align-items: center; gap: 0.5rem; color: var(--navy-900); font-weight: 800; }
 .photo-pair { display: grid; grid-template-columns: 1.05fr 0.95fr; align-items: start; gap: 1.1rem; }
@@ -291,6 +315,17 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
 .photo-card figcaption { padding: 1rem 1.15rem 1.2rem; color: var(--slate); font-size: 0.76rem; line-height: 1.45; }
 .single-photo { display: block; width: min(100%, 420px); margin-left: auto; }
 .single-photo .dog-card { margin-top: 0; transform: rotate(1.5deg); }
+.life-gallery { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(170px, 0.88fr); grid-template-rows: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 1rem; }
+.life-gallery .photo-card { min-width: 0; box-shadow: 0 14px 36px rgb(7 26 43 / 9%); }
+.gallery-main { grid-row: 1 / -1; display: flex; flex-direction: column; }
+.gallery-main picture, .gallery-main img { width: 100%; height: 100%; }
+.gallery-main picture { display: block; flex: 1; }
+.gallery-main img { object-fit: cover; }
+.gallery-small { display: flex; min-height: 0; flex-direction: column; }
+.gallery-small picture { display: block; overflow: hidden; min-height: 0; flex: 1; }
+.gallery-small img { width: 100%; height: 100%; min-height: 180px; object-fit: cover; }
+.basketball-card img { object-position: center 28%; }
+.dog-portrait-card img { object-position: center 35%; }
 
 .contact { color: var(--white); background: var(--navy-900); }
 .contact-inner { display: grid; grid-template-columns: 0.9fr 1.1fr; align-items: start; gap: clamp(3rem, 8vw, 8rem); }
@@ -326,13 +361,17 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
   .spotlight-image { max-height: 680px; }
   .spotlight-image img { object-position: center 42%; }
   .beyond-copy { max-width: 760px; }
+  .life-gallery { width: min(100%, 760px); }
   .path-visual { width: min(76vw, 500px); margin-inline: auto; }
   .path-copy { order: -1; }
   .credential-line { grid-template-columns: 1fr; }
   .credential-line strong { margin-bottom: 0.65rem; text-align: left; }
   .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .research-card { grid-column: 1 / -1; min-height: 300px; }
-  .pji-synthesis .spotlight-content { order: -1; }
+  .pji-synthesis .spotlight-content { order: initial; }
+  .pji-synthesis .spotlight-image { min-height: 0; padding-block: 2rem; }
+  .flagship-body { grid-template-columns: 1fr; }
+  .writing-support-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .single-photo { margin-left: 0; }
 }
 
@@ -345,7 +384,7 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
   .site-nav ul { display: grid; width: 100%; padding-bottom: 0.55rem; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.2rem; }
   .site-nav a { width: 100%; min-height: 44px; padding: 0.55rem 0.35rem; justify-content: center; }
   .site-nav .nav-resume { min-height: 44px; margin-left: 0; padding-inline: 0.45rem; }
-  .section-heading, .work-grid, .writing-grid, .service-foundation-grid, .pji-scope { grid-template-columns: 1fr; }
+  .section-heading, .work-grid, .writing-support-grid, .service-foundation-grid, .pji-scope { grid-template-columns: 1fr; }
   .section-heading { gap: 1rem; }
   .signature-idea { grid-template-columns: 1fr; }
   .signature-idea > p:last-child { grid-column: auto; }
@@ -354,6 +393,7 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
   .metric-row div + div { border-top: 1px solid var(--gold-200); border-left: 0; }
   .spotlight-image { max-height: 560px; }
   .card-footer { align-items: flex-start; flex-direction: column; }
+  .flagship .card-footer { align-items: flex-start; flex-direction: column; }
   .card-footer a { text-align: left; }
   .photo-pair { gap: 0.8rem; }
   .dog-card { margin-top: 2.6rem; }
@@ -375,6 +415,11 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
   .path-marker { right: -0.3rem; font-size: 0.64rem; }
   .photo-pair { grid-template-columns: 1fr; }
   .dog-card { margin-top: 0; }
+  .service-photo { grid-template-columns: 1fr; }
+  .service-photo picture { max-height: 270px; }
+  .life-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto; }
+  .gallery-main { grid-column: 1 / -1; grid-row: auto; }
+  .gallery-small img { min-height: 160px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
