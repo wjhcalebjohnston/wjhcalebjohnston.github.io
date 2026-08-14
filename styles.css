@@ -60,7 +60,7 @@ h2 { margin-bottom: 1.25rem; font-size: clamp(2.25rem, 4.6vw, 4.35rem); }
 h3 { margin-bottom: 0.8rem; font-size: clamp(1.45rem, 2.4vw, 2.05rem); }
 h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
 .wrap { width: min(calc(100% - 2.4rem), var(--max)); margin-inline: auto; }
-.section { padding-block: clamp(5rem, 9vw, 8.7rem); scroll-margin-top: 88px; }
+.section { padding-block: clamp(5rem, 9vw, 8.7rem); }
 
 .eyebrow, .mini-label, .card-meta, .writing-type {
   margin-bottom: 0.9rem;
@@ -265,8 +265,8 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
 .service-foundation-grid article { padding-left: 1.25rem; border-left: 2px solid var(--gold-400); }
 .service-foundation-grid h4 { color: var(--navy-900); }
 .service-foundation-grid p:last-child { margin: 0; color: #40515f; }
-.service-photo { grid-column: 1 / -1; display: grid; overflow: hidden; grid-template-columns: minmax(150px, 0.42fr) minmax(0, 1fr); margin: 0.4rem 0 0; color: var(--white); background: var(--navy-900); border-radius: 14px; }
-.service-photo picture { display: block; min-height: 190px; }
+.service-photo { grid-column: 1 / -1; display: grid; overflow: hidden; grid-template-columns: minmax(220px, 0.62fr) minmax(0, 1fr); margin: 0.4rem 0 0; color: var(--white); background: var(--navy-900); border-radius: 14px; }
+.service-photo picture { display: block; min-height: 0; aspect-ratio: 4 / 5; }
 .service-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .service-photo figcaption { display: grid; padding: 1.4rem 1.6rem; align-content: center; gap: 0.45rem; }
 .service-photo figcaption strong { color: #e7cf9e; font-family: var(--serif); font-size: 1.25rem; }
@@ -295,13 +295,14 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
 .flagship-body h3 { max-width: 760px; margin-bottom: 0; font-size: clamp(2.2rem, 4vw, 3.55rem); }
 .flagship-body > p { margin: 0; color: #d7e0e7; font-size: 1rem; line-height: 1.75; }
 .writing-type { color: #e2c792; }
+.writing-card h3, .pji-synthesis h3 { text-wrap: pretty; }
 .writing-card h3 { color: var(--white); }
 .writing-support-grid .writing-card h3 { font-size: clamp(1.32rem, 1.7vw, 1.72rem); line-height: 1.15; }
 .writing-card p:not(.writing-type) { color: #d4dee5; }
 .card-footer { display: flex; margin-top: 2rem; padding-top: 1.2rem; align-items: flex-start; flex-direction: column; justify-content: space-between; gap: 0.9rem; border-top: 1px solid rgb(255 255 255 / 14%); font-size: 0.82rem; }
 .flagship .card-footer { align-items: center; flex-direction: row; }
 .card-footer span:first-child { color: #aebdc8; }
-.card-footer a { display: inline-flex; min-height: 44px; align-items: center; color: var(--white); font-weight: 800; text-align: left; }
+.card-footer a { display: inline-flex; min-height: 44px; align-items: center; gap: 0.35rem; color: var(--white); font-weight: 800; text-align: left; }
 .availability-note { max-width: 880px; margin: 2.2rem auto 0; color: #bac8d2; font-size: 0.84rem; text-align: center; }
 
 .beyond { background: var(--ivory); }
@@ -314,7 +315,7 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
 .graduation-card img { aspect-ratio: 4 / 5; }
 .dog-card { margin-top: 5.4rem; }
 .dog-card img { aspect-ratio: 1; }
-.photo-card figcaption { padding: 1rem 1.15rem 1.2rem; color: var(--slate); font-size: 0.76rem; line-height: 1.45; }
+.photo-card figcaption { padding: 1rem 1.15rem 1.2rem; color: var(--slate); font-size: 0.84rem; line-height: 1.5; }
 .single-photo { display: block; width: min(100%, 420px); margin-left: auto; }
 .single-photo .dog-card { margin-top: 0; transform: rotate(1.5deg); }
 .life-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto; align-items: start; gap: 1rem; }
@@ -324,10 +325,13 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
 .gallery-main picture { display: block; aspect-ratio: 4 / 3; }
 .gallery-main img { object-fit: cover; }
 .gallery-small { display: flex; min-height: 0; flex-direction: column; }
-.gallery-small picture { display: block; overflow: hidden; min-height: 0; aspect-ratio: 4 / 3; }
-.gallery-small img { width: 100%; height: 100%; min-height: 180px; object-fit: cover; }
-.basketball-card img { object-position: center 28%; }
+.gallery-small picture { display: block; overflow: hidden; min-height: 0; aspect-ratio: 4 / 5; }
+.gallery-small img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-small figcaption { display: flex; min-height: 4.6rem; align-items: center; }
+.basketball-card img { object-position: center; }
 .dog-portrait-card img { object-position: center 35%; }
+
+.site-nav .nav-resume, .feature-link { gap: 0.35rem; }
 
 .contact { color: var(--white); background: var(--navy-900); }
 .contact-inner { display: grid; grid-template-columns: 0.9fr 1.1fr; align-items: start; gap: clamp(3rem, 8vw, 8rem); }
@@ -415,6 +419,7 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
   .hero { padding-top: 4rem; }
   h1, .hero h1 { max-width: 100%; font-size: clamp(2.05rem, 9.5vw, 2.4rem); }
   .writing .section-heading h2 { font-size: 2.05rem; }
+  .flagship-body h3 { font-size: clamp(1.9rem, 8.5vw, 2.15rem); }
   .button-row, .button { width: 100%; }
   .hero-portrait { width: 88vw; }
   .path-visual { width: 88vw; padding: 0 0 1.5rem 1.5rem; }
@@ -422,11 +427,9 @@ h4 { margin-bottom: 0.65rem; font-size: 1.2rem; }
   .photo-pair { grid-template-columns: 1fr; }
   .dog-card { margin-top: 0; }
   .service-photo { grid-template-columns: 1fr; }
-  .service-photo picture { max-height: 270px; }
-  .life-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto; }
-  .gallery-main { grid-column: 1 / -1; grid-row: auto; }
+  .life-gallery { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .gallery-main { grid-column: auto; grid-row: auto; }
   .gallery-main picture { aspect-ratio: 1; }
-  .gallery-small img { min-height: 160px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
