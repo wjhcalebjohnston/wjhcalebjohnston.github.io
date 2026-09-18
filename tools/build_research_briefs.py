@@ -310,7 +310,7 @@ BRIEFS = (
         filename="caleb-johnston-public-safety-policy-brief.pdf",
         category="Policy analysis | Place-based safety | 2025",
         title="A Two-Tier Strategy for Public Safety around Banner Lane and Sursum Corda",
-        metadata="10 pages | Georgetown University | October 2025 | Not commissioned by the D.C. Council",
+        metadata="Georgetown University | October 2025 | Not commissioned by the D.C. Council",
         overview="An academic policy project pairing near-term environmental improvements with longer-term social investment, implementation ownership, and accountability.",
         left=(
             Section(
