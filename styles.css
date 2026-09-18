@@ -555,3 +555,52 @@ h2 { font-size: clamp(2.15rem, 3.8vw, 3.5rem); }
   .writing-card, .writing-card.flagship, .text-card, .contact { color: #000; background: #fff; border-color: #ccc; }
   .writing-card h3, .writing-card p, .writing-card a, .contact h2, .contact p, .contact a { color: #000 !important; }
 }
+
+/* A chronological learning sequence and the people behind the service story. */
+.pji-feature { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--gold-200); }
+.pji-feature h4 { font: 1.6rem/1.25 var(--serif); color: var(--navy-900); margin-bottom: 0.7rem; }
+.pji-feature h4 a { text-decoration: none; }
+.pji-feature p:last-child { max-width: 780px; margin: 0; color: var(--slate); font-size: 0.94rem; }
+.article-link { font-size: 0.85rem; font-weight: 700; white-space: nowrap; }
+.learning-sequence { border-top: 1px solid var(--line); }
+.learning-step { display: grid; grid-template-columns: 150px minmax(0, 1fr) 200px; gap: 2.5rem; padding: 2.5rem 0; border-bottom: 1px solid var(--line); align-items: start; }
+.learning-marker span { display: block; color: var(--gold-600); font: 2.5rem/1 var(--serif); margin-bottom: 1rem; }
+.learning-marker p { font-size: 0.83rem; color: var(--slate); margin: 0; }
+.learning-content { max-width: 640px; }
+.learning-content h3 { font-size: 1.85rem; margin-bottom: 0.65rem; }
+.learning-content p:last-child { margin-bottom: 0; color: var(--slate); }
+.learning-content .degree-name { margin-bottom: 0.15rem; }
+.learning-content .degree-detail { margin-bottom: 1rem; }
+.learning-photo { margin: 0; }
+.learning-photo img { border-radius: 12px; }
+.learning-photo figcaption { font-size: 0.75rem; color: var(--slate); margin-top: 0.65rem; }
+.wps-step { background: var(--navy-900); color: var(--white); padding: 2.5rem; border: 0; border-radius: 0 0 18px 18px; grid-template-columns: 110px minmax(0, 1fr); }
+.wps-step h3 { color: var(--white); }
+.wps-step .card-meta, .wps-step .learning-marker span { color: #e2c792; }
+.wps-step .learning-marker p, .wps-step .learning-content p:last-child { color: #d8e1e9; }
+.cohort-line { font-weight: 600; }
+.caregiving-story { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 3rem; align-items: center; margin-top: 3.5rem; padding-top: 3rem; border-top: 1px solid var(--gold-200); }
+.caregiving-copy h3 { font-size: clamp(1.8rem, 2.6vw, 2.4rem); line-height: 1.2; }
+.caregiving-copy p:not(.eyebrow) { color: #344552; }
+.caregiving-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: start; }
+.caregiving-gallery figure { margin: 0; }
+.caregiving-gallery figure:last-child { margin-top: 2rem; }
+.caregiving-gallery img { border-radius: 12px; }
+.caregiving-gallery figcaption { margin-top: 0.7rem; color: var(--slate); font-size: 0.77rem; line-height: 1.5; }
+@media (max-width: 980px) {
+  .learning-step { grid-template-columns: 110px minmax(0, 1fr) 160px; gap: 1.5rem; }
+  .wps-step { grid-template-columns: 85px minmax(0, 1fr); }
+  .caregiving-story { gap: 2rem; }
+}
+@media (max-width: 760px) {
+  .pji-feature { grid-template-columns: 1fr; gap: 1rem; }
+  .learning-step { grid-template-columns: 1fr; gap: 1rem; padding: 2rem 0; }
+  .learning-marker { display: flex; align-items: center; gap: 1rem; }
+  .learning-marker span { font-size: 1.75rem; margin: 0; }
+  .learning-marker br { display: none; }
+  .learning-photo { width: min(65vw, 230px); margin: 0.5rem auto 0; }
+  .wps-step { padding: 1.5rem; }
+  .caregiving-story { grid-template-columns: 1fr; gap: 1.5rem; }
+  .caregiving-gallery { max-width: 530px; margin-inline: auto; }
+  .learning-content h3 { font-size: 1.6rem; }
+}
